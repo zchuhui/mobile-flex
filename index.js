@@ -18,7 +18,7 @@ app.set('view engine','hbs');
 app.use(express.static(__dirname + '/public'));
 
 //home页路由
-app.get('/home', function (req, res) {
+app.get('/', function (req, res) {
    res.render('home',{
        title:'Home Page'    //传入页面的title
    });
